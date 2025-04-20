@@ -8,3 +8,7 @@
 - Developed official college website with complete backend and frontend logic.
 - Deployed and configured using cPanel; managed DNS, FTP, SSL, and hosting setup.
 - Optimized user experience for mobile responsiveness and fast loading times.
+
+###Website
+www.gdcqta.edu.pk
+  
