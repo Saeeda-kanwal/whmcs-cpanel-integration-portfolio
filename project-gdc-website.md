@@ -9,6 +9,6 @@
 - Deployed and configured using cPanel; managed DNS, FTP, SSL, and hosting setup.
 - Optimized user experience for mobile responsiveness and fast loading times.
 
-###Website
+Website:
 www.gdcqta.edu.pk
   
