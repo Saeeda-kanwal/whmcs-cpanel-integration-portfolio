@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librawebs – WHMCS + cPanel Automation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+    }
+    header {
+      background: #1e40af;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      margin-top: 0;
+      color: #1e40af;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+      margin-top: 2rem;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+    }
+    form button {
+      background: #1e40af;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .integration-box {
+      background: #f3f4f6;
+      padding: 2rem;
+      border-left: 6px solid #1e40af;
+      margin-top: 2rem;
+      border-radius: 12px;
+    }
+    footer {
+      background: #1e40af;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Librawebs</h1>
+    <p>Smart Hosting Solutions Powered by WHMCS + cPanel</p>
+  </header>
+
+  <section>
+    <h2>Start Hosting Instantly</h2>
+    <form>
+      <label for="domain">Choose a Domain</label>
+      <input type="text" id="domain" name="domain" placeholder="e.g. example.com" required />
+
+      <label for="plan">Select Hosting Plan</label>
+      <select id="plan" name="plan">
+        <option value="starter">Starter – $3.99/month</option>
+        <option value="pro">Pro – $7.99/month</option>
+        <option value="business">Business – $12.99/month</option>
+      </select>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <button type="submit">Submit & Simulate Provisioning</button>
+    </form>
+
+    <div class="integration-box">
+      <h3>🔐 Simulated cPanel Login</h3>
+      <p>
+        <strong>Username:</strong> yourdomain<br/>
+        <strong>Password:</strong> ********<br/>
+        <strong>Login URL:</strong>
+        <a href="https://yourdomain.com:2083" target="_blank">https://yourdomain.com:2083</a>
+      </p>
+      <p style="font-size: 0.9rem; color: #555;">*Note: This is a simulated login for demo purposes. Replace with real credentials from your WHMCS API.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>WHMCS Automation Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Automated Client Onboarding</h3>
+        <p>Clients can sign up and purchase hosting plans with auto-activation via WHMCS.</p>
+      </div>
+      <div class="feature">
+        <h3>Billing & Invoicing</h3>
+        <p>Automated invoices, pro-rata billing, overdue reminders, and secure payment integration.</p>
+      </div>
+      <div class="feature">
+        <h3>Domain Management</h3>
+        <p>Domain search, registration, transfer, and renewal via WHMCS-integrated registrar modules.</p>
+      </div>
+      <div class="feature">
+        <h3>Support & Ticket System</h3>
+        <p>Clients can submit support tickets and receive automated email responses through WHMCS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>cPanel Integration Highlights</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Auto Provisioning</h3>
+        <p>New accounts are provisioned instantly in cPanel through WHM integration after payment confirmation.</p>
+      </div>
+      <div class="feature">
+        <h3>Client Access</h3>
+        <p>Users receive cPanel login credentials and can manage files, emails, and domains directly.</p>
+      </div>
+      <div class="feature">
+        <h3>Package Management</h3>
+        <p>Define custom hosting packages with specific limits, resources, and pricing via WHM.</p>
+      </div>
+      <div class="feature">
+        <h3>Secure Hosting Environment</h3>
+        <p>SSL, backups, cron jobs, and firewall settings are all manageable from WHM and reflected in WHMCS.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      For demos or business inquiries:<br/>
+      📧 <a href="mailto:saeedakanwal022@gmail.com">saeedakanwal022@gmail.com</a><br/>
+      🔗 <a href="https://linkedin.com/in/saeeda-kanwal" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Librawebs | WHMCS & cPanel Automation by Saeeda Kanwal
+  </footer>
+</body>
+</html>
